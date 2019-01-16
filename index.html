@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>独 渣 儿</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script>
+        var app = angular.module("duzhaer", []);
+        app.controller("home", function ($scope) {
+            $scope.items = [
+                {
+                    "full": "1.jpg"
+                    , "thumbs": "1.jpg"
+                    , "name": "周豎峰"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "2.jpg"
+                    , "thumbs": "2.jpg"
+                    , "name": "黃之鋒"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "3.jpg"
+                    , "thumbs": "3.jpg"
+                    , "name": "周永康"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "4.jpg"
+                    , "thumbs": "4.jpg"
+                    , "name": "梁颂恒"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "5.jpg"
+                    , "thumbs": "5.jpg"
+                    , "name": "游蕙祯"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "6.jpg"
+                    , "thumbs": "6.jpg"
+                    , "name": "朱凯迪"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "7.jpg"
+                    , "thumbs": "7.jpg"
+                    , "name": "罗冠聪"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "8.jpg"
+                    , "thumbs": "8.jpg"
+                    , "name": "郑松泰"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "9.jpg"
+                    , "thumbs": "9.jpg"
+                    , "name": "刘小丽"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "10.jpg"
+                    , "thumbs": "10.jpg"
+                    , "name": "陈浩天"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "11.jpg"
+                    , "thumbs": "11.jpg"
+                    , "name": "周浩辉"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "12.jpg"
+                    , "thumbs": "12.jpg"
+                    , "name": "杜汶泽"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "13.jpg"
+                    , "thumbs": "13.jpg"
+                    , "name": "招顯聰"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "14.jpg"
+                    , "thumbs": "14.jpg"
+                    , "name": "梁天琦"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "15.jpg"
+                    , "thumbs": "15.jpg"
+                    , "name": "黃台仰"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }, {
+                    "full": "16.jpg"
+                    , "thumbs": "16.jpg"
+                    , "name": "黃俊傑"
+                    , "name_en": ""
+                    , "desc": ""
+                    , "organization": ""
+    }
+            ]
+        });
+    </script>
+</head>
+
+<body ng-app="duzhaer" ng-controller="home">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><strong>独 渣 儿 !!</strong></h1> </header>
+        <!-- Main -->
+        <div id="main">
+            <article class="thumb" ng-repeat="item in items">
+                <div></div>
+                <a href="images/fulls/{{item.full}}" class="image"><img src="images/thumbs/{{item.thumbs}}" alt="" /></a>
+                <h2>{{item.name}}</h2>
+                <p>{{item.desc}}</p>
+            </article>
+        </div>
+        <!-- Footer -->
+        <!--
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>Magna feugiat sed adipiscing</h2>
+									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+								</section>
+								<section>
+									<h2>Follow me on ...</h2>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+								</p>
+							</div>
+							<div>
+								<section>
+									<h2>Get in touch</h2>
+									<form method="post" action="#">
+										<div class="field half first">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="text" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+							</div>
+						</div>
+					</footer>
+-->
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
